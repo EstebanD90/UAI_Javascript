@@ -1,11 +1,46 @@
-#ul_primerEjercicio {
+body {
+    background-color: cornsilk;
+}
+
+#div1_VarAndOper, #div1_Strings, #div1_Arrays, #div1_IfElse,#div1_For, #div1_Functions{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(27, 94, 219);
+    margin: 30px;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: space-around;
+
+}
+
+#input_Var_and_Ope_1 , #input_Var_and_Ope_2 {
+    margin-right: 9px;
+}
+
+#titulo_VarAndOper, #titulo_Strings, #titulo_Arrays {
     color: crimson;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
+    display: 100%;
+    margin-bottom: 13px;
 }
 
-#h5_Var_and_Ope_1 {
+#div_input_VarAndOper, #div_input_Strings, #div_input_Arrays{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+#h3_resultado_VarAndOper, #h3_resultado_Strings, #h3_resultado_Arrays {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
+    font-size: 20px;
 }
 
+
+#div2_label_Arrays {
+    margin-bottom: 12px;
+    color: darkmagenta;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
