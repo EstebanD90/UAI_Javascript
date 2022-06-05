@@ -104,19 +104,28 @@ function Strings_5() {
 /*f. Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y
 algún espacio entre medio). Utilizar los métodos de los ejercicios anteriores para
 generar un nuevo string que tenga la primera letra de ambas palabras en
-mayúscula y las demás letras en minúscula (utilizar*/
+mayúscula y las demás letras en minúscula (utilizar indexOf, substring,
+toUpperCase, toLowerCase y el operador +).*/
 
 function Strings_6() {
-    var primerString = document.getElementById("input_Strings").value;
-    var subString_5;
+    var fullString = document.getElementById("input_Strings").value;
+    var primer_subString = fullString.substring(0, 1).toUpperCase() + fullString.substring(1, fullString.indexOf(' ')).toLowerCase() + '';
+    var segundo_subString = fullString.substring(fullString.indexOf(' ') + 1,fullString.indexOf(' ') + 2).toUpperCase() + fullString.substring(fullString.indexOf(' ') + 3, fullString.length).toLowerCase();
 
-    if(primerString.length < 10)
+    resultado = primer_subString + ' ' +  segundo_subString;
+
+    /*
+    resultado = fullString.substring(0, 1).toUpperCase() + fullString.substring(1, fullString.indexOf(' ')).toLowerCase() 
+                + '' 
+                + fullString.substring(fullString.indexOf(' ') + 1,fullString.indexOf(' ') + 2).toUpperCase()
+                + fullString.substring(fullString.indexOf(' ') + 3, fullString.length).toLowerCase();*/
+
+    if(fullString.length < 10)
     {
         alert("Ingrese al menos 10 caracteres y un espacio en blanco");
     }
     else
     {
-        subString_5 = primerString.substring(0,4);
-        document.getElementById("h3_resultado_Strings").innerHTML = "Los primeros 5 caracteres son: " + subString_5;
+        document.getElementById("h3_resultado_Strings").innerHTML = resultado;
     }           
 }

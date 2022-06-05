@@ -48,10 +48,13 @@ devuelva verdadero si es un número entero.*/
 function Functions_3() {
     var primerNumero = document.getElementById("input_Functions1").value;
     var segundoNumero = document.getElementById("input_Functions2").value;
-    
-    if(isNaN(primerNumero) == true || isNaN(segundoNumero) == true)
+
+    primerNumero = parseInt(primerNumero); 
+    segundoNumero = parseInt(segundoNumero);
+
+    if(Number.isInteger(primerNumero) == true || Number.isInteger(segundoNumero) == true)
     {
-        console.log(resultado);
+        console.log(primerNumero + ' ' + segundoNumero);
         document.getElementById("h3_resultado_Functions").innerHTML = true;
 
         return true;
