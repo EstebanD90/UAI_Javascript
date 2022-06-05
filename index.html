@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="exercises/variable_and_operators.js"></script>
+    <script src="exercises/strings.js"></script>
+
+    <title>Actividad 9 - Javascript</title>
+  </head>
+  <body>
+    <!--<a href="exercises/">Ejercicios </a>-->
+    <div id="div_ejercicio1">
+      <ul>
+        <ul id="ul_primerEjercicio">
+          Variables y Operadores
+        </ul>
+        <li>
+          <label for="">Ingrese un numero:</label>
+          <input id="input_Var_and_Ope_1" type="text" />
+          <label for="">Ingrese un numero:</label>
+          <input id="input_Var_and_Ope_2" type="text" />
+        </li>
+        <li>
+          <button
+            id="boton_Var_and_Ope"
+            onclick="Var_and_Ope_1(); return false;"
+          >
+            1.a Sumar
+          </button>
+        </li>
+        <li>
+          <button
+            id="boton_Var_and_Ope"
+            onclick="Var_and_Ope_2(); return false;"
+          >
+            1.b Concatenar
+          </button>
+        </li>
+        <li>
+          <button
+            id="boton_Var_and_Ope"
+            onclick="Var_and_Ope_3(); return false;"
+          >
+            1.c Calcular longitud
+          </button>
+        </li>
+        <h5 id="h5_Var_and_Ope_1"></h5>
+      </ul>
+    </div>
+    <div id="div1_Strings">
+      Strings
+      <label for="">Ingrese una o mas palabras:</label>
+      <input id="input_Strings" type="text" />
+      <div id="div2_Strings">
+        <button onclick="Strings_1(); return false;">2.a -> toUppercase</button>
+        <button onclick="Strings_2(); return false;">2.b -> Substring</button>
+        <button onclick="Strings_3(); return false;">2.c -> ultimos 3</button>
+        <button onclick="Strings_4(); return false;">
+          2.d -> MAYUS y minus
+        </button>
+        <button onclick="Strings_5(); return false;">
+          2.e -> Espacio en blanco
+        </button>
+        <button onclick="Strings_6(); return false;">
+          2.f -> Mayus y Espacios
+        </button>
+      </div>
+      <div>
+        <h3 id="h3_resultado_Strings"></h3>
+      </div>
+    </div>
+  </body>
+</html>
