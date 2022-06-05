@@ -87,7 +87,7 @@ variable (utilizar indexOf).*/
 
 function Strings_5() {
     var primerString = document.getElementById("input_Strings").value;
-    var espacioBlanco = primerString.indexOf(" ");
+    var espacioBlanco = primerString.indexOf(" ") + 1;
 
     if(primerString.length < 10)
     {
@@ -95,8 +95,8 @@ function Strings_5() {
     }
     else
     {
-        subString_5 = primerString.substring(0,4);
-        document.getElementById("h3_resultado_Strings").innerHTML = "Los primeros 5 caracteres son: " + subString_5;
+        //subString_5 = primerString.substring(0,4);
+        document.getElementById("h3_resultado_Strings").innerHTML = "El espacio en blanco está en: " + espacioBlanco;
     }           
 }
 

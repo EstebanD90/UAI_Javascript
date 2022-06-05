@@ -3,16 +3,17 @@ valor es mayor o igual que 0,5 mostrar una alerta con el mensaje “Greater than
 0,5” y sino un alerta con el mensaje “Lower than 0,5”.*/
 
 var resultado;
-var nroAleatorio = Math.random();
 
 function IfElse_1() {
-    //var nroAleatorio = Math.random();
+    var nroAleatorio = Math.random();
 
     if(nroAleatorio >= 0.5)
     {
+        document.getElementById("h3_resultado_IfElse").innerHTML = nroAleatorio;
         alert("Mayor que 0,5");
     }
     else {
+        document.getElementById("h3_resultado_IfElse").innerHTML = nroAleatorio;
         alert("Menor que 0,5");
     }
 }
@@ -29,7 +30,10 @@ vi. “Adulto mayor” entre 61 y 75 años;
 vii. “Anciano” si es mayor a 75 años.*/
 
 function IfElse_2() {
-    var Age = nroAleatorio * 100;
+    //var nroAleatorio = Math.random();
+    var edad = document.getElementById("input_IfElse").value;
+
+    var Age = edad;
 
     if (Age < 2) 
     { 
@@ -43,8 +47,20 @@ function IfElse_2() {
     { 
         alert("Adolescente"); 
     }
-    else if (Age <= 30) { alert("Joven"); }
-    else if (Age <= 60) { alert("Adulto"); }
-    else if (Age <= 75) { alert("Adulto mayor"); }
-    else { alert("Anciano"); }
+    else if (Age <= 30) 
+    { 
+        alert("Joven"); 
+    }
+    else if (Age <= 60) 
+    { 
+        alert("Adulto"); 
+    }
+    else if (Age <= 75) 
+    { 
+        alert("Adulto mayor"); 
+    }
+    else 
+    { 
+        alert("Anciano"); 
+    }
 }

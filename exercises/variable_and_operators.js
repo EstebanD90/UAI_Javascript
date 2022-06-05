@@ -15,7 +15,7 @@ function Var_and_Ope_1() {
         alert("Para la suma solo ingrese numeros");
     }
     else {
-        document.getElementById("h5_resultado_VarAndOper").innerHTML = resultado;
+        document.getElementById("h3_resultado_VarAndOper").innerHTML = resultado;
     }
       
 }
@@ -30,7 +30,7 @@ function Var_and_Ope_2() {
         
     resultado = primerString + segundoString;  
     
-    document.getElementById("h5_resultado_VarAndOper").innerHTML = resultado;
+    document.getElementById("h3_resultado_VarAndOper").innerHTML = resultado;
 }
 
 
@@ -44,5 +44,5 @@ function Var_and_Ope_3() {
 
     resultado = primerString.length + segundoString.length;
 
-    document.getElementById("h5_resultado_VarAndOper").innerHTML = resultado;
+    document.getElementById("h3_resultado_VarAndOper").innerHTML = resultado;
 }

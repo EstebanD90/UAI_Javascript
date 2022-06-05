@@ -2,7 +2,7 @@ body {
     background-color: cornsilk;
 }
 
-#div1_VarAndOper, #div1_Strings, #div1_Arrays, #div1_IfElse,#div1_For, #div1_Functions{
+#div1_VarAndOper, #div1_Strings, #div1_Arrays, #div1_IfElse, #div1_For, #div1_Functions{
     display: flex;
     flex-direction: column;
     border: 2px solid rgb(27, 94, 219);
@@ -18,7 +18,7 @@ body {
     margin-right: 9px;
 }
 
-#titulo_VarAndOper, #titulo_Strings, #titulo_Arrays {
+#titulo_VarAndOper, #titulo_Strings, #titulo_Arrays, #titulo_IfElse, #titulo_For, #titulo_Functions {
     color: crimson;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
@@ -26,13 +26,13 @@ body {
     margin-bottom: 13px;
 }
 
-#div_input_VarAndOper, #div_input_Strings, #div_input_Arrays{
+#div_input_VarAndOper, #div_input_Strings, #div_input_Arrays, #div_input_IfElse, #div_input_For, #div_input_Functions {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
     font-size: 15px;
 }
 
-#h3_resultado_VarAndOper, #h3_resultado_Strings, #h3_resultado_Arrays {
+#h3_resultado_VarAndOper, #h3_resultado_Strings, #h3_resultado_Arrays, #h3_resultado_IfElse, #h3_resultado_For, #h3_resultado_Functions {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
 }

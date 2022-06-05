@@ -67,7 +67,7 @@ function Arrays_5() {
 separado por un guión - (utilizar join).*/
 
 function Arrays_6() {
-
+    resultado = "";
     resultado = meses;
     resultado = resultado.join('-');
 
@@ -82,9 +82,10 @@ function Arrays_6() {
 (utilizar slice).*/
 
 function Arrays_7() {
-    resultado = meses;
-    resultado = resultado.slice(4,11);
+    const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
+    resultado = meses.slice(4,11);
+    document.getElementById("h3_resultado_Arrays").innerHTML = "";
     document.getElementById("h3_resultado_Arrays").innerHTML = resultado;
     console.log(resultado); 
     //alert(resultado);
