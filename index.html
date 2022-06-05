@@ -7,54 +7,46 @@
 
     <script src="exercises/variable_and_operators.js"></script>
     <script src="exercises/strings.js"></script>
+    <script src="exercises/arrays.js"></script>
+    <script src="exercises/if_else.js"></script>
+    <script src="exercises/for.js"></script>
+    <script src="exercises/functions.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
 
     <title>Actividad 9 - Javascript</title>
   </head>
   <body>
     <!--<a href="exercises/">Ejercicios </a>-->
-    <div id="div_ejercicio1">
-      <ul>
-        <ul id="ul_primerEjercicio">
-          Variables y Operadores
-        </ul>
-        <li>
-          <label for="">Ingrese un numero:</label>
-          <input id="input_Var_and_Ope_1" type="text" />
-          <label for="">Ingrese un numero:</label>
-          <input id="input_Var_and_Ope_2" type="text" />
-        </li>
-        <li>
-          <button
-            id="boton_Var_and_Ope"
-            onclick="Var_and_Ope_1(); return false;"
-          >
-            1.a Sumar
-          </button>
-        </li>
-        <li>
-          <button
-            id="boton_Var_and_Ope"
-            onclick="Var_and_Ope_2(); return false;"
-          >
-            1.b Concatenar
-          </button>
-        </li>
-        <li>
-          <button
-            id="boton_Var_and_Ope"
-            onclick="Var_and_Ope_3(); return false;"
-          >
-            1.c Calcular longitud
-          </button>
-        </li>
-        <h5 id="h5_Var_and_Ope_1"></h5>
-      </ul>
+
+    <!--EJERCICIO VARIABLES Y OPERADORES-->
+    <div id="div1_VarAndOper">
+      <div id="titulo_VarAndOper">Variables y Operadores</div>
+      <div id="div_input_VarAndOper">
+        <label for="">Ingrese uno o mas caracteres:</label>
+        <input id="input_VarAndOper1" type="text" />
+        <label for="">Ingrese uno o mas caracteres:</label>
+        <input id="input_VarAndOper2" type="text" />
+      </div>
+      <div><h5 id="h3_resultado_VarAndOper"></h5></div>
+      <div>
+        <button onclick="Var_and_Ope_1(); return false;">Sumar</button>
+        <button onclick="Var_and_Ope_2(); return false;">Concatenar</button>
+        <button onclick="Var_and_Ope_3(); return false;">
+          Calcular longitud
+        </button>
+      </div>
     </div>
+
+    <!--EJERCICIO STRINGS-->
     <div id="div1_Strings">
-      Strings
-      <label for="">Ingrese una o mas palabras:</label>
-      <input id="input_Strings" type="text" />
-      <div id="div2_Strings">
+      <div id="titulo_Strings">Strings</div>
+      <div id="div_input_Strings">
+        <label for="">Ingrese una o mas palabras:</label>
+        <input id="input_Strings" type="text" />
+      </div>
+      <div><h3 id="h3_resultado_Strings"></h3></div>
+      <div>
         <button onclick="Strings_1(); return false;">2.a -> toUppercase</button>
         <button onclick="Strings_2(); return false;">2.b -> Substring</button>
         <button onclick="Strings_3(); return false;">2.c -> ultimos 3</button>
@@ -68,8 +60,101 @@
           2.f -> Mayus y Espacios
         </button>
       </div>
+    </div>
+
+    <!--EJERCICIO ARRAYS-->
+    <div id="div1_Arrays">
+      <div id="titulo_Arrays">Arrays</div>
+      <div id="div2_label_Arrays">
+        <label for=""
+          >Dado el array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo",
+          "Junio","Julio", "Agosto", "Septiembre", "Octubre", "Noviembre",
+          "Diciembre"]</label
+        >
+      </div>
+      <div id="div_input_Arrays">
+        <label for="">Ingrese una palabra:</label>
+        <input id="input_Arrays1" type="text" />
+        <label for="">Ingrese una palabra:</label>
+        <input id="input_Arrays2" type="text" />
+      </div>
+      <div><h3 id="h3_resultado_Arrays"></h3></div>
       <div>
-        <h3 id="h3_resultado_Strings"></h3>
+        <button onclick="Arrays_1(); return false;">Meses 5 y 11</button>
+        <button onclick="Arrays_2(); return false;">
+          Ordenar alfabeticamente
+        </button>
+        <button onclick="Arrays_3(); return false;">Agregar elementos</button>
+        <button onclick="Arrays_4(); return false;">Quitar elementos</button>
+        <button onclick="Arrays_5(); return false;">Invertir orden</button>
+        <button onclick="Arrays_6(); return false;">
+          Unir meses con guion
+        </button>
+        <button onclick="Arrays_7(); return false;">de Mayo a Noviembre</button>
+      </div>
+    </div>
+
+    <!--EJERCICIO IF-ELSE-->
+    <div id="div1_IfElse">
+      <div id="titulo_IfElse">If-Else</div>
+      <div id="div_input_IfElse">
+        <label for="">Ingrese una o mas palabras:</label>
+        <input id="input_IfElse" type="text" />
+      </div>
+      <div><h3 id="h3_resultado_IfElse"></h3></div>
+      <div>
+        <button onclick="IfElse_1(); return false;">Crear nro aleatorio</button>
+        <button onclick="IfElse_1(); return false;">
+          Crear variable 'Age'
+        </button>
+      </div>
+    </div>
+
+    <!--EJERCICIO FOR-->
+    <div id="div1_For">
+      <div id="titulo_Strings">For</div>
+      <div id="div_input_Strings">
+        <label for="">Ingrese una o mas palabras:</label>
+        <input id="input_Strings" type="text" />
+      </div>
+      <div><h3 id="h3_resultado_Strings"></h3></div>
+      <div>
+        <button onclick="Strings_1(); return false;">2.a -> toUppercase</button>
+        <button onclick="Strings_2(); return false;">2.b -> Substring</button>
+        <button onclick="Strings_3(); return false;">2.c -> ultimos 3</button>
+        <button onclick="Strings_4(); return false;">
+          2.d -> MAYUS y minus
+        </button>
+        <button onclick="Strings_5(); return false;">
+          2.e -> Espacio en blanco
+        </button>
+        <button onclick="Strings_6(); return false;">
+          2.f -> Mayus y Espacios
+        </button>
+      </div>
+    </div>
+
+    <!--EJERCICIO FUNCIONES-->
+    <div id="div1_Functions">
+      <div id="titulo_Strings">Funciones</div>
+      <div id="div_input_Strings">
+        <label for="">Ingrese una o mas palabras:</label>
+        <input id="input_Strings" type="text" />
+      </div>
+      <div><h3 id="h3_resultado_Strings"></h3></div>
+      <div>
+        <button onclick="Strings_1(); return false;">2.a -> toUppercase</button>
+        <button onclick="Strings_2(); return false;">2.b -> Substring</button>
+        <button onclick="Strings_3(); return false;">2.c -> ultimos 3</button>
+        <button onclick="Strings_4(); return false;">
+          2.d -> MAYUS y minus
+        </button>
+        <button onclick="Strings_5(); return false;">
+          2.e -> Espacio en blanco
+        </button>
+        <button onclick="Strings_6(); return false;">
+          2.f -> Mayus y Espacios
+        </button>
       </div>
     </div>
   </body>
