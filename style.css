@@ -1,0 +1,69 @@
+@font-face {
+    font-family: Assistant;
+    src: url(/fonts/static/Assistant-ExtraBold.ttf);
+  }
+
+#div_calculadora_imc {
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 600px;
+    margin-right: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+    align-content: space-around;
+    justify-items: center;
+}
+
+#titulo_calculadora {
+    font-family: Assistant;
+    font-weight: bolder;
+    font-size: 18px;
+    color: black;
+    padding: 13px;
+}
+
+label {
+    font-family: Assistant;
+    color:gray;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 18px;
+}
+
+b {
+    font-family: Assistant;
+    font-weight: bolder;
+    padding-left: 25px;
+    padding-top: 16px;
+}
+
+input {
+    margin-left: 25px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    font-size: 30px;
+    margin: 1px,solid, white;
+    width: 18%;
+}
+
+#input_resultado {
+    width: 75%;
+}
+
+button {
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
