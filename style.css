@@ -3,19 +3,25 @@
     src: url(/fonts/static/Assistant-ExtraBold.ttf);
   }
 
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 500px 0 500px;
+}
+
 #div_calculadora_imc {
     background-color:whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    margin-left: 600px;
-    margin-right: 600px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /*margin: 15px 600px 0 600px;*/
+    padding: 0 20px 0 20px;
     align-self: center;
     align-content: space-around;
     justify-items: center;
+    max-width: 60%;
+    min-width: 60%;
 }
 
 #titulo_calculadora {
@@ -29,35 +35,28 @@
 label {
     font-family: Assistant;
     color:gray;
-    padding-left: 25px;
-    padding-top: 5px;
-    padding-bottom: 18px;
-}
+    padding: 5px 0 18px 30px;
+ }
 
 b {
     font-family: Assistant;
     font-weight: bolder;
-    padding-left: 25px;
-    padding-top: 16px;
+    padding: 16px 0 0 30px;
 }
 
 input {
-    margin-left: 25px;
-    margin-bottom: 15px;
-    margin-right: 10px;
+    margin: 0 10px 15px 30px;
     font-size: 30px;
-    margin: 1px,solid, white;
+    border: 5px,solid, white;
     width: 18%;
 }
 
-#input_resultado {
+#input_calculadora_resultado {
     width: 75%;
 }
 
 button {
-    margin-left: 25px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin: 15px 0 40px 30px;
     background-color: #008CBA; /* Green */
     border: none;
     color: white;
@@ -66,4 +65,60 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
+}
+
+#label_calculadora_resultado {
+    font-family: Assistant;
+    color: black;
+    padding: 0 0 15px 15px;
+}
+
+#tabla_imc {
+    font-family: Assistant;
+    font-weight: bolder;
+    padding: 16px 0 0 20px;  
+    justify-content: center;
+    align-self: flex-start;
+    border: 2px 0 2px 0;
+    border-color:gray;
+    /*display: flex;*/
+}
+
+td, th{
+    font-family: Assistant;
+    font-weight: 100;
+    color:black;
+    padding: 16px 0 16px 0;
+    border-top: 1px solid gainsboro;
+    padding-right: 5em;
+}
+
+th {
+    font-family: Assistant;
+    font-weight: bolder;
+    color:black;
+}
+
+h3 {
+    font-family: Assistant;
+    font-weight: bolder;
+    display: inline;
+    color: black;
+    font-size: 15px;
+}
+
+#div_tabla_imc {
+    background-color:whitesmoke;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 15px;
+    padding: 0 20px 0 20px;
+    align-self: center;
+    align-content: space-around;
+    justify-items: center;
+    max-width: 60%;
+    min-width: 60%;
 }
