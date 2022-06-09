@@ -144,12 +144,9 @@ function mostrarIMC(nroIMC) {
               )
             break;					
     
-    }	 
-
+    };
 
     
-;
-
     document.querySelector('#div_tabla_imc').innerHTML = `
     <table id="tabla_imc">
       <thead>
