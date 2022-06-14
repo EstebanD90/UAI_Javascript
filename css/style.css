@@ -1,7 +1,7 @@
 @font-face {
     font-family: Assistant;
     src: url(/fonts/static/Assistant-ExtraBold.ttf);
-  }
+}
 
 body {
     display: flex;
@@ -9,8 +9,78 @@ body {
     margin: 15px 500px 0 500px;
 }
 
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    #div_calculadora_imc {
+        min-width: 75% !important;
+        max-width: none !important;
+        padding: 10px !important;
+    }
+
+    input {
+        min-width: 18% !important;
+        max-width: 45% !important;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    #div_calculadora_imc {
+        min-width: 75%;
+        max-width: none;
+        padding: 10px;
+    }
+
+    input {
+        min-width: 18%;
+        max-width: 45%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    #div_calculadora_imc {
+        min-width: 75%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        margin: 10px;
+    }
+
+    #div_calculadora_imc {
+        min-width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    #div_calculadora_imc {
+        min-width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    #div_calculadora_imc {
+        min-width: 75%;
+    }
+}
+
+
+
 #div_calculadora_imc {
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -34,9 +104,9 @@ body {
 
 label {
     font-family: Assistant;
-    color:gray;
+    color: gray;
     padding: 5px 0 18px 30px;
- }
+}
 
 b {
     font-family: Assistant;
@@ -47,7 +117,7 @@ b {
 input {
     margin: 0 10px 15px 30px;
     font-size: 30px;
-    border: 5px,solid, white;
+    border: 5px, solid, white;
     width: 18%;
 }
 
@@ -57,7 +127,8 @@ input {
 
 button {
     margin: 15px 0 40px 30px;
-    background-color: #008CBA; /* Green */
+    background-color: #008CBA;
+    /* Green */
     border: none;
     color: white;
     padding: 10px 25px;
@@ -77,18 +148,19 @@ button {
 #tabla_imc {
     font-family: Assistant;
     font-weight: bolder;
-    padding: 16px 0 0 20px;  
+    padding: 16px 0 0 20px;
     justify-content: center;
     align-self: flex-start;
     border: 2px 0 2px 0;
-    border-color:gray;
+    border-color: gray;
     /*display: flex;*/
 }
 
-td, th{
+td,
+th {
     font-family: Assistant;
     font-weight: 100;
-    color:black;
+    color: black;
     padding: 16px 0 16px 0;
     border-top: 1px solid gainsboro;
     padding-right: 5em;
@@ -97,7 +169,7 @@ td, th{
 th {
     font-family: Assistant;
     font-weight: bolder;
-    color:black;
+    color: black;
 }
 
 h3 {
@@ -109,7 +181,7 @@ h3 {
 }
 
 #div_tabla_imc {
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     display: none;
     flex-direction: column;
     justify-content: space-around;
