@@ -1,0 +1,18 @@
+body {
+    background-color: #203a55 !important;
+}
+
+span {
+    color: whitesmoke !important;
+    font-size: 2em;
+}
+
+#titulo_boleteria {
+    text-align: center;
+    color: whitesmoke;
+}
+
+/*color: #2c3e50;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+*/
