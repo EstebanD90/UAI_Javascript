@@ -71,7 +71,7 @@ export default {
           precio: 9500,
           fecha: "10 de Noviembre",
           lugar: "Movistar Arena" , 
-          stock: 5
+          stock: 7
         }
       ]
     };
