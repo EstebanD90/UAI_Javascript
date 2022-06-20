@@ -14,8 +14,10 @@
           :fecha="entrada.fecha"
           :precio="entrada.precio"
           :lugar="entrada.lugar"
+          :stock="entrada.stock"
         />
       </div>
+
     </div>
   </div>
 </template>
@@ -33,37 +35,43 @@ export default {
           descripcion: "Green Day",
           precio: 14500,
           fecha: "11 de Septiembre",
-          lugar: "Vélez Sarsfield" 
+          lugar: "Vélez Sarsfield" ,
+          stock: 15
         },
         {
           descripcion: "Guns N'Roses",
           precio: 17500,
           fecha: "30 de Septiembre",
-          lugar: "River Plate" 
-        },
-        {
-          descripcion: "Las Pastillas del abuelo",
-          precio: 5000,
-          fecha: "20 de Septiembre",
-          lugar: "Luna Park" 
+          lugar: "River Plate" ,
+          stock: 20
         },
         {
           descripcion: "Coldplay",
           precio: 69999,
           fecha: "25 de Octubre",
-          lugar: "River Plate" 
+          lugar: "River Plate", 
+          stock: 10
+        },
+        {
+          descripcion: "Las Pastillas del abuelo",
+          precio: 5000,
+          fecha: "20 de Septiembre",
+          lugar: "Luna Park" , 
+          stock: 15
         },
         {
           descripcion: "No Te Va Gustar",
           precio: 5500,
           fecha: "15 de Octubre",
-          lugar: "Hipódromo de Palermo" 
+          lugar: "Hipódromo de Palermo" , 
+          stock: 15
         },
         {
           descripcion: "Liam Gallagher",
           precio: 9500,
           fecha: "10 de Noviembre",
-          lugar: "Movistar Arena" 
+          lugar: "Movistar Arena" , 
+          stock: 5
         }
       ]
     };

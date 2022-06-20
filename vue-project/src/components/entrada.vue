@@ -5,13 +5,19 @@
   >
     <div class="card-header">{{ titulo }}</div>
     <div class="card-body">
-      <h5 class="card-text">Fecha: {{ fecha }}</h5>
+      <h5 class="card-text">{{ fecha }}</h5>
       <p class="card-text">${{ precio }}</p>
       <p class="card-text">Estadio: {{ lugar }}</p>
-      <p>Cantidad adquirida: {{ cantidadComprada }}</p>
-      <p>Recaudacion: {{recaudacion}}</p>
+      <p>Cantidad adquirida: {{ cantComprada }} / {{ stock }}</p>
+      <p>Recaudacion: ${{recaudacion}}</p>
       <button @Click="comprarEntrada()" class="btn btn-success">Comprar</button>
     </div>
+    <div v-if="cantComprada >= (stock - 5) && cantComprada != stock" class="m-4 alert alert-warning">
+            Últimas {{ calculoStock }} entradas disponibles.
+      </div>
+    <div v-else-if="cantComprada == stock" class="m-4 alert alert-danger">
+            Entradas agotadas.
+      </div> 
   </div>
 </template>
 
@@ -22,20 +28,41 @@ export default {
     fecha: String,
     precio: Number,
     lugar: String,
+    stock: Number,
   },
+
   data() {
     return {
-      cantidadComprada: 0,
+      cantComprada: 0,
     };
   },
+
   computed: {
     recaudacion() {
-      return this.cantidadComprada * this.precio;
+      return this.cantComprada * this.precio;
     },
+    calculoStock() {
+      return this.stock - this.cantComprada;
+    }
   },
   methods: {
     comprarEntrada() {
-      this.cantidadComprada = this.cantidadComprada + 1;
+      if(this.validarStock())
+      {
+        this.cantComprada = this.cantComprada + 1;
+      }
+      
+    },
+
+    validarStock() {
+        if(this.cantComprada <= (this.stock - 1)) {
+          return true;
+        }
+        else
+        {
+          alert('No quedan entradas disponibles');
+          return false;
+        }
     },
   },
 };
