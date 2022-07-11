@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="../Practica Parcial 2/config/config.js"></script>
+
+    <link rel="stylesheet" href="/Practica Parcial 2/style/style.css">
+
+    <title>Practica parcial 2</title>
+</head>
+<body>
+    
+<div id="div_calculadora">
+    <p>Elija la dimension necesaria:</p>
+    <p>Dimensionalidad:     
+        <select name="" id="select_dimensiones" onchange="mostrarXYZ(); return false;">
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </p>
+
+    <p>Introduzca las coordenadas de puntos: </p>
+
+    <div id="div_dimensiones">
+        <!--<p>A: (<input type="text" name="" id="input_AX">,<input type="text" name="" id="input_AY">)</p>
+        <p>B: (<input type="text" name="" id="input_BX">,<input type="text" name="" id="input_BY">)</p>-->
+    </div>
+
+    <div id="div_boton_calculadora">
+        <button id="boton_calcular" onclick="calularLongDimensiones(); return false;">Calcular longitud del segmento AB</button>
+    </div>
+
+</div>
+<div id="div_panel_resultado">
+    <div id="div_label_resultado">
+        <p>Resultado:</p>
+    </div>
+    <div id="div_resultado">
+        <h3 id="h3_resultado">XXXXXXXX</h3>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+body {
+    margin: 1em 30em 0 30em;
+}
+
+#div_calculadora {
+    background-color: gainsboro;
+    padding: 1em;
+    border-radius: 15px;
+
+}
+
+#div_boton_calculadora {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+
+#div_label_resultado {
+    background-color: #28bb28a9;
+    color: white;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    margin-top: 10px;
+}
+
+#div_resultado {
+    background-color: hsla(120, 50%, 79%, 0.663);
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    justify-content: center;
+}
