@@ -2,6 +2,10 @@ body {
     margin: 1em 30em 0 30em;
 }
 
+input {
+    width: 50px;
+}
+
 #div_calculadora {
     background-color: gainsboro;
     padding: 1em;
@@ -32,4 +36,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     justify-content: center;
+}
+
+#div_dimensiones {
+    justify-content: center;
+}
+
+#inputAZ,
+#inputBZ {
+    display: none;
 }
